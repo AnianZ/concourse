@@ -71,6 +71,10 @@ There is no configuration required to take advantage of these new improvements.
 
 * Fixed a [bug](https://github.com/concourse/concourse/issues/3942) where log lines on the build page would have all their timestamps off by one. #4637
 
+#### <sub><sup><a name="4668" href="#4668">:link:</a></sup></sub> fix
+
+* @evanchaoli fixed a [bug](https://github.com/concourse/concourse/issues/4656) where secret redaction incorrectly "redacts" empty string resulting in mangled logs. #4668
+
 #### <sub><sup><a name="registry-image-67" href="#registry-image-67">:link:</a></sup></sub> fix
 
 * @hbd fixed a [bug](https://github.com/concourse/registry-image-resource/issues/56) in the [`registry-image` resource](https://github.com/concourse/registry-image-resource) where `get` steps would mysteriously give a 404 error concourse/registry-image-resource#67.
