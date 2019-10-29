@@ -70,3 +70,11 @@ There is no configuration required to take advantage of these new improvements.
 #### <sub><sup><a name="4637" href="#4637">:link:</a></sup></sub> fix
 
 * Fixed a [bug](https://github.com/concourse/concourse/issues/3942) where log lines on the build page would have all their timestamps off by one. #4637
+
+#### <sub><sup><a name="registry-image-67" href="#registry-image-67">:link:</a></sup></sub> fix
+
+* @hbd fixed a [bug](https://github.com/concourse/registry-image-resource/issues/56) in the [`registry-image` resource](https://github.com/concourse/registry-image-resource) where `get` steps would mysteriously give a 404 error concourse/registry-image-resource#67.
+
+#### <sub><sup><a name="registry-image-69" href="#registry-image-69">:link:</a></sup></sub> fix
+
+* Made the [`registry-image` resource](https://github.com/concourse/registry-image-resource) more resilient - requests that get a 429 (Too Many Requests) from Docker Hub will be retried concourse/registry-image-resource#69.
